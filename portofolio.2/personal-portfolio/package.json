@@ -1,0 +1,34 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "A modern personal portfolio showcasing professional experience with advanced 3D effects and parallax scrolling.",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "3D",
+    "parallax",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "three": "^0.132.2",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3",
+    "eslint": "^7.14.0",
+    "eslint-plugin-react": "^7.27.0"
+  }
+}

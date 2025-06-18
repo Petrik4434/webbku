@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrik Sinambela | Professional Portfolio</title>
+    <meta name="description" content="Portofolio profesional Petrik Sinambela. Showcase modern, interaktif, dengan efek 3D, parallax, dan animasi memukau.">
+    <meta name="keywords" content="Portfolio, Web Developer, 3D, Parallax, React, Three.js, GSAP, Tailwind, Modern, Interactive">
+    <meta name="author" content="Petrik Sinambela">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Modern Sans-serif Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Main CSS (Tailwind or custom) -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- SEO & Social -->
+    <meta property="og:title" content="Petrik Sinambela | Professional Portfolio">
+    <meta property="og:description" content="Portofolio profesional modern, interaktif, dengan efek 3D dan parallax.">
+    <meta property="og:image" content="/og-image.png">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#18181b">
+    <!-- Accessibility & Manifest -->
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body class="bg-gradient-to-br from-[#18181b] to-[#23272f] text-white font-inter antialiased">
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Sticky Navigation -->
+    <nav id="navbar" class="sticky top-0 z-50 transition-all bg-opacity-80 backdrop-blur-md">
+        <!-- Navigation rendered by React -->
+    </nav>
+    <!-- React Root -->
+    <main id="main-content" tabindex="-1">
+        <div id="root"></div>
+    </main>
+    <!-- 3D Loader Spinner -->
+    <div id="global-loader" style="display:none;">
+        <div class="loader-3d"></div>
+    </div>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" aria-label="Scroll to top" class="fixed bottom-6 right-6 z-40 hidden">
+        <span class="scroll-top-3d"></span>
+    </button>
+    <!-- Dark/Light Mode Toggle -->
+    <button id="theme-toggle" aria-label="Toggle dark mode" class="fixed bottom-6 left-6 z-40">
+        <span class="theme-toggle-3d"></span>
+    </button>
+    <!-- Lazy Loading Polyfill (optional for older browsers) -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+    <!-- Main JS Bundle (React, Three.js, GSAP, Framer Motion, etc.) -->
+    <script src="path/to/your/bundle.js"></script>
+    <!-- Google Maps API (optional, for contact section) -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> -->
+    <!-- Optional: Google Analytics or other scripts -->
+    <!-- <script async src="..."></script> -->
+    <!-- Inline style for skip link accessibility -->
+    <style>
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            z-index: 1000;
+            background: #23272f;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: left 0.3s;
+        }
+        .skip-link:focus {
+            left: 16px;
+            top: 16px;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</body>
+</html>
